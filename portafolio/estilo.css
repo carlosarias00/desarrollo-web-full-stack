@@ -601,3 +601,41 @@ footer {
 #habilidades article.aparecer.visible {
     transform: translateY(0);
 }
+.volver {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 18px;
+    background-color: #6c63ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.volver:hover {
+    background-color: #5148d8;
+}
+#presentacion {
+    position: relative;
+}
+#presentacion {
+    position: relative !important;
+}
+
+.presentacion-contenido {
+    position: relative;
+}
+.volver {
+    font-size: 12px;
+    padding: 7px 10px;
+}
+.volver {
+    font-size: 13px;
+    padding: 8px 12px;
+    background-color: #5148a8;
+}
+
+.volver:hover {
+    background-color: #3f378a;
+}
