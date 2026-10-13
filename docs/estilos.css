@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #300429;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    background-color: #222;
+    padding: 15px 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: violet;
+}
+
+nav a:hover {
+    color: violet;
+}
+
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+section,
+aside {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: purple;
+}
+
+article {
+    border-left: 5px solid purple;
+    padding-left: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0 15px;
+}
+
+button {
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #300429;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 60px 5%;
+}
+
+.contenido {
+    flex: 1;
+}
+
+.contenido h2 {
+    font-size: 40px;
+    color: purple;
+}
+
+.contenido p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: purple;
+    color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+}
+
+.imagen {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen img {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+}

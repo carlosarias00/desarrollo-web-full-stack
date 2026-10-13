@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <a href="../index.html">← Volver al proyecto principal</a>
+    <h1>JavaScript - DOM y Eventos</h1>
+
+    <!-- 3. DOM -->
+
+    <h2>3. DOM</h2>
+
+    <h1 id="titulo">Hola</h1>
+
+    <button id="btnCambiar">Cambiar texto</button>
+
+    <script>
+        const titulo = document.getElementById("titulo");
+        const boton = document.getElementById("btnCambiar");
+
+        boton.addEventListener("click", () => {
+            titulo.textContent = "Texto cambiado con JavaScript";
+            titulo.style.color = "green";
+        });
+    </script>
+
+
+    <!-- 3.1 Modificar estilos -->
+
+    <h2>3.1 Modificar estilos</h2>
+
+    <script>
+        titulo.style.color = "red";
+        titulo.style.fontSize = "10px";
+    </script>
+
+
+    <!-- 3.2 Crear elementos dinámicamente -->
+
+    <h2>3.2 Crear elementos dinámicamente</h2>
+
+    <ul id="lista"></ul>
+
+    <button id="btnAgregar">Agregar elemento</button>
+
+    <script>
+        const lista = document.getElementById("lista");
+        const botonAgregar = document.getElementById("btnAgregar");
+
+        botonAgregar.addEventListener("click", () => {
+            const li = document.createElement("li");
+            li.textContent = "JavaScript";
+            lista.appendChild(li);
+        });
+    </script>
+
+
+    <!-- 3.3 Eventos -->
+
+    <h2>3.3 Eventos</h2>
+
+
+    <!-- Evento click -->
+
+    <h3>Evento click</h3>
+
+    <button id="btn">Haz clic aquí</button>
+
+    <script>
+        const botonEvento = document.getElementById("btn");
+
+        botonEvento.addEventListener("click", () => {
+            console.log("Se hizo clic");
+            alert("¡Botón presionado!");
+        });
+    </script>
+
+
+    <!-- Evento keydown -->
+
+    <h3>Evento keydown</h3>
+
+    <h1>Presiona una tecla</h1>
+
+    <p id="resultado"></p>
+
+    <script>
+        const resultado = document.getElementById("resultado");
+
+        document.addEventListener("keydown", (evento) => {
+            console.log("Tecla:", evento.key);
+            alert("Tecla presionada!");
+            resultado.textContent = "Presionaste: " + evento.key;
+        });
+    </script>
+
+
+    <!-- Evento de formulario -->
+
+    <h3>Evento de formulario</h3>
+
+    <form id="formulario">
+
+        <input id="nombre" type="text">
+
+        <button type="submit">Guardar</button>
+
+    </form>
+
+    <script>
+        const formulario = document.getElementById("formulario");
+
+        formulario.addEventListener("submit", (evento) => {
+            evento.preventDefault();
+
+            const nombre = document.getElementById("nombre").value;
+
+            alert("Dato guardado!");
+            console.log("Nombre:", nombre);
+        });
+    </script>
+
+</body>
+</html>
